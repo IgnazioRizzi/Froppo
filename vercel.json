@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "Backend/src/Froppo.API/Froppo.API.csproj",
+      "use": "dotnet"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "Backend/src/Froppo.API/Froppo.API.csproj"
+    }
+  ]
+}

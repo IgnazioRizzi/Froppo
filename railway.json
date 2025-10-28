@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "Backend/src/Froppo.API/Froppo.API.csproj",
+      "use": "@railway/cli"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "Backend/src/Froppo.API/Froppo.API.csproj"
+    }
+  ]
+}
