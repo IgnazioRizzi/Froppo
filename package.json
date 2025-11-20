@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "cd frontend && npm ci && npm run build",
-    "install": "cd frontend && npm ci"
+    "build": "if [ -d frontend ]; then cd frontend && npm ci && npm run build; else echo 'Frontend directory not found'; exit 1; fi",
+    "install": "if [ -d frontend ]; then cd frontend && npm ci; else echo 'Frontend directory not found'; exit 1; fi"
   }
 }
 
