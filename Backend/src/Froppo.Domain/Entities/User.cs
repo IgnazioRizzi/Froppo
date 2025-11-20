@@ -34,6 +34,9 @@ namespace Froppo.Domain.Entities
         [StringLength(100)]
         public string Residence { get; set; } = string.Empty; // Residenza
         
+        [StringLength(16)]
+        public string? CodiceFiscale { get; set; } = string.Empty; // Codice Fiscale
+        
         [StringLength(255)]
         public string? Certificate { get; set; } = string.Empty; // Allegato attestato (nome file)
         

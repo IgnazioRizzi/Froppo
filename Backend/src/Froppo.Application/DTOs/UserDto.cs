@@ -10,6 +10,7 @@ namespace Froppo.Application.DTOs
         public DateTime DateOfBirth { get; set; }
         public string PlaceOfBirth { get; set; } = string.Empty;
         public string Residence { get; set; } = string.Empty;
+        public string? CodiceFiscale { get; set; } = string.Empty;
         public string? Certificate { get; set; } = string.Empty;
         public DateTime CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
@@ -24,6 +25,7 @@ namespace Froppo.Application.DTOs
         public DateTime DateOfBirth { get; set; }
         public string PlaceOfBirth { get; set; } = string.Empty;
         public string Residence { get; set; } = string.Empty;
+        public string? CodiceFiscale { get; set; } = string.Empty;
         public string? Certificate { get; set; } = string.Empty;
     }
 
@@ -37,6 +39,7 @@ namespace Froppo.Application.DTOs
         public DateTime DateOfBirth { get; set; }
         public string PlaceOfBirth { get; set; } = string.Empty;
         public string Residence { get; set; } = string.Empty;
+        public string? CodiceFiscale { get; set; } = string.Empty;
         public string? Certificate { get; set; } = string.Empty;
     }
 }

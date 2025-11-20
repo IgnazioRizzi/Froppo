@@ -37,6 +37,7 @@ namespace Froppo.Application.Services
                 DateOfBirth = createUserDto.DateOfBirth,
                 PlaceOfBirth = createUserDto.PlaceOfBirth,
                 Residence = createUserDto.Residence,
+                CodiceFiscale = createUserDto.CodiceFiscale,
                 Certificate = createUserDto.Certificate,
                 CreatedAt = DateTime.UtcNow
             };
@@ -58,6 +59,7 @@ namespace Froppo.Application.Services
             existingUser.DateOfBirth = updateUserDto.DateOfBirth;
             existingUser.PlaceOfBirth = updateUserDto.PlaceOfBirth;
             existingUser.Residence = updateUserDto.Residence;
+            existingUser.CodiceFiscale = updateUserDto.CodiceFiscale;
             existingUser.Certificate = updateUserDto.Certificate;
             existingUser.UpdatedAt = DateTime.UtcNow;
 
@@ -82,6 +84,7 @@ namespace Froppo.Application.Services
                 DateOfBirth = user.DateOfBirth,
                 PlaceOfBirth = user.PlaceOfBirth,
                 Residence = user.Residence,
+                CodiceFiscale = user.CodiceFiscale,
                 Certificate = user.Certificate,
                 CreatedAt = user.CreatedAt,
                 UpdatedAt = user.UpdatedAt

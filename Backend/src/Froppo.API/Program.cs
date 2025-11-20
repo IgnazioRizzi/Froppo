@@ -95,11 +95,11 @@ builder.Services.AddSingleton<Froppo.API.Services.FileStorageService>();
 // In-memory data store for demo
 var users = new List<User>
 {
-    new User { Id = 1, FirstName = "Mario", LastName = "Rossi", Email = "mario.rossi@email.com", UserId = "2", DateOfBirth = new DateTime(1985, 3, 15), PlaceOfBirth = "Roma", Residence = "Milano", Certificate = "attestato_mario.pdf", CreatedAt = DateTime.UtcNow.AddDays(-10) },
-    new User { Id = 2, FirstName = "Giulia", LastName = "Bianchi", Email = "giulia.bianchi@email.com", UserId = "2", DateOfBirth = new DateTime(1990, 7, 22), PlaceOfBirth = "Napoli", Residence = "Torino", Certificate = "attestato_giulia.pdf", CreatedAt = DateTime.UtcNow.AddDays(-5) },
-    new User { Id = 3, FirstName = "Luca", LastName = "Verdi", Email = "luca.verdi@email.com", UserId = "3", DateOfBirth = new DateTime(1988, 11, 8), PlaceOfBirth = "Firenze", Residence = "Bologna", Certificate = "attestato_luca.pdf", CreatedAt = DateTime.UtcNow.AddDays(-2) },
-    new User { Id = 4, FirstName = "Anna", LastName = "Neri", Email = "anna.neri@email.com", UserId = "3", DateOfBirth = new DateTime(1992, 1, 30), PlaceOfBirth = "Venezia", Residence = "Genova", Certificate = "attestato_anna.pdf", CreatedAt = DateTime.UtcNow.AddDays(-1) },
-    new User { Id = 5, FirstName = "Paolo", LastName = "Blu", Email = "paolo.blu@email.com", UserId = "2", DateOfBirth = new DateTime(1987, 5, 12), PlaceOfBirth = "Palermo", Residence = "Catania", Certificate = "attestato_paolo.pdf", CreatedAt = DateTime.UtcNow.AddDays(-3) }
+    new User { Id = 1, FirstName = "Mario", LastName = "Rossi", Email = "mario.rossi@email.com", UserId = "2", DateOfBirth = new DateTime(1985, 3, 15), PlaceOfBirth = "Roma", Residence = "Milano", CodiceFiscale = "RSSMRA85C15H501Z", Certificate = "attestato_mario.pdf", CreatedAt = DateTime.UtcNow.AddDays(-10) },
+    new User { Id = 2, FirstName = "Giulia", LastName = "Bianchi", Email = "giulia.bianchi@email.com", UserId = "2", DateOfBirth = new DateTime(1990, 7, 22), PlaceOfBirth = "Napoli", Residence = "Torino", CodiceFiscale = "BNCGLI90L22F839K", Certificate = "attestato_giulia.pdf", CreatedAt = DateTime.UtcNow.AddDays(-5) },
+    new User { Id = 3, FirstName = "Luca", LastName = "Verdi", Email = "luca.verdi@email.com", UserId = "3", DateOfBirth = new DateTime(1988, 11, 8), PlaceOfBirth = "Firenze", Residence = "Bologna", CodiceFiscale = "VRDLCU88S08D612T", Certificate = "attestato_luca.pdf", CreatedAt = DateTime.UtcNow.AddDays(-2) },
+    new User { Id = 4, FirstName = "Anna", LastName = "Neri", Email = "anna.neri@email.com", UserId = "3", DateOfBirth = new DateTime(1992, 1, 30), PlaceOfBirth = "Venezia", Residence = "Genova", CodiceFiscale = "NRENNA92A30L736R", Certificate = "attestato_anna.pdf", CreatedAt = DateTime.UtcNow.AddDays(-1) },
+    new User { Id = 5, FirstName = "Paolo", LastName = "Blu", Email = "paolo.blu@email.com", UserId = "2", DateOfBirth = new DateTime(1987, 5, 12), PlaceOfBirth = "Palermo", Residence = "Catania", CodiceFiscale = "BLUPLA87E12G273M", Certificate = "attestato_paolo.pdf", CreatedAt = DateTime.UtcNow.AddDays(-3) }
 };
 
 var userAccounts = new List<UserAccount>
